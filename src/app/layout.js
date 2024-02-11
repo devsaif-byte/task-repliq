@@ -22,8 +22,6 @@ export default function RootLayout({ children }) {
 					<main className="flex-grow flex flex-col justify-between">
 						{children}
 					</main>
-
-					{/* footer */}
 				</body>
 			</html>
 		</StoreProvider>

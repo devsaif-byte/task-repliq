@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import ProductList from "./ProductList";
 
-const page = () => {
-	return <h1>Hello from products</h1>;
+const product = () => {
+	return <ProductList />;
 };
 
-export default page;
+export default product;

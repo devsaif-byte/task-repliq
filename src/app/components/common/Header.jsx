@@ -55,7 +55,9 @@ const Header = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<Button text={"Login"} type={"success"} />
+				<Link href="/auth/login">
+					<Button text={"Login"} type={"success"} />
+				</Link>
 			</div>
 		</div>
 	);
