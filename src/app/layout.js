@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/common/Header";
-import StoreProvider from "./contexts/storeProvider";
+import StoreProvider from "./contexts/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,8 +12,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<StoreProvider>
-			<html lang="en">
+		<html lang="en">
+			<StoreProvider>
 				<body
 					className={`${inter.className} flex flex-col items-center justify-between min-h-screen`}
 				>
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 						{children}
 					</main>
 				</body>
-			</html>
-		</StoreProvider>
+			</StoreProvider>
+		</html>
 	);
 }
