@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Button from "../common/Button";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Login = () => {
 	// local states
@@ -69,6 +70,9 @@ const Login = () => {
 						<div className="form-control mt-6">
 							<Button text={"Login"} type={"success"} />
 						</div>
+						<Link href="/signup">
+							<span>New user? </span>Signup
+						</Link>
 					</form>
 				</div>
 			</div>
