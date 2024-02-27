@@ -4,13 +4,13 @@ import Sidebar from "@/app/(ui)/dashboard/Sidebar";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-export default function DashboardLayout({ children }) {
+export default function DashboardLayout() {
 	const router = useRouter();
 
 	useEffect(() => {
 		(async () => {
 			const { user, error } = getUser();
-			console.log(user);
+			// console.log(user);
 
 			if (error) {
 				router.push("/");

@@ -5,7 +5,6 @@ import Product from "./Product";
 import Loader from "../common/Loader";
 
 const ProductList = ({ props }) => {
-	console.log(props);
 	// const data = [
 	// 	{
 	// 		drug_name: "Sanatos",
